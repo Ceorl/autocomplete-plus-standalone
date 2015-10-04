@@ -1,0 +1,48 @@
+{
+  "name": "autocomplete-plus",
+  "version": "2.21.0",
+  "main": "./lib/main",
+  "description": "Display possible completions in the editor while typing",
+  "repository": "https://github.com/atom/autocomplete-plus",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.189.0 <2.0.0"
+  },
+  "dependencies": {
+    "atom-slick": "^2.0.0",
+    "fuzzaldrin": "^2.1.0",
+    "grim": "^1.4.0",
+    "minimatch": "^2.0.1",
+    "selector-kit": "^0.1",
+    "semver": "^4.3.3",
+    "stable": "^0.1.5",
+    "underscore-plus": "^1.6.6",
+    "require": "latest"
+  },
+  "devDependencies": {
+    "coffeelint": "^1.9.7",
+    "fs-plus": ">=2.4.0",
+    "temp": ">=0.7.0",
+    "grunt": "~0.4.5",
+    "grunt-cli": "0.1.13",
+    "grunt-coffeelint": "0.0.7",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-concat": "~0.1.3",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-watch": "~0.6.1"
+  },
+  "consumedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "1.0.0": "consumeProviderLegacy",
+        "1.1.0": "consumeProvidersLegacy",
+        "2.0.0": "consumeProvider"
+      }
+    },
+    "snippets": {
+      "versions": {
+        "0.1.0": "consumeSnippets"
+      }
+    }
+  }
+}
