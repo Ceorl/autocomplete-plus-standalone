@@ -3,9 +3,9 @@ path = null
 semver = null
 fuzzaldrin = null
 
-ProviderManager = require './provider-manager'
-SuggestionList = require './suggestion-list'
-SuggestionListElement = require './suggestion-list-element'
+ProviderManager = require '.dist//provider-manager'
+SuggestionList = require '.dist/suggestion-list'
+SuggestionListElement = require '.dist/suggestion-list-element'
 
 # Deferred requires
 minimatch = null
